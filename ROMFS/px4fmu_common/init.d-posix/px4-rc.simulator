@@ -1,7 +1,7 @@
 #!/bin/sh
 # shellcheck disable=SC2154
 
-simulator_tcp_port=$((4560+px4_instance))
+simulator_tcp_port=${PX4_SIM_PORT}
 
 # Check if PX4_SIM_HOSTNAME environment variable is empty
 # If empty check if PX4_SIM_HOST_ADDR environment variable is empty
