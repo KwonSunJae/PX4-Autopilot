@@ -103,7 +103,7 @@ fi
 
 # multi-instance setup
 # shellcheck disable=SC2154
-param set MAV_SYS_ID $((px4_instance+1))
+param set MAV_SYS_ID ${MAV_ID}
 
 if [ $AUTOCNF = yes ]
 then
